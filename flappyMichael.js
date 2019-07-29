@@ -69,6 +69,7 @@ function draw(){
         constant = pipeNorth.height+gap;
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
+        ctx.drawImage(fg,0, cvs.height - fg.height, canvas.width, canvas.height);
              
         pipe[i].x++;
         
@@ -93,7 +94,7 @@ function draw(){
         
     }
 
-    ctx.drawImage(fg,0, cvs.height - fg.height, canvas.width, canvas.height);
+    // ctx.drawImage(fg,0, cvs.height - fg.height, canvas.width, canvas.height);
     
     ctx.drawImage(mj,bX,bY);
     
